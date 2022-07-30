@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Dumy from "./components/Dumy";
+import Test from "./components/Test";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [name, setName] = useState('Anjan Dhar')
+
+    const [count, setCount] = useState(0)
+
+    return (
+        <div className="App">
+            <h1>Hello Moyna !</h1>
+            <p>{count}</p>
+            <button onClick={() => setCount(count + 1 )}> Plus </button>
+            <Test propName={name} propSetName={setName} />
+            <Dumy />
+        </div>
+    );
 }
 
 export default App;
