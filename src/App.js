@@ -4,7 +4,7 @@ import Test from "./components/Test";
 
 function App() {
 
-    const [name, setName] = useState('Anjan Dhar')
+    const [name, setName] = useState('Chaity Rani Dhar')
 
     const [count, setCount] = useState(0)
 
