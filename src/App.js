@@ -4,6 +4,7 @@ import FormHandling from "./components/Form Handling/FormHandling";
 import Clock from "./components/map function/Clock";
 import StateClassComponents from "./components/state/StateClassComponents";
 import Test from "./components/Test";
+import BoilerWater from "./components/Water Boiler/BoilerWater";
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
             <Clock />
 
             <FormHandling />
+
+            <BoilerWater />
         </div>
     );
 }
