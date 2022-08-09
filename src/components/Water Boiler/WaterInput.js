@@ -4,14 +4,14 @@
     f: 'Fahrenheit',
 }
 
-const WaterInput = ({temper, temperScallTo, scale}) => {
+const WaterInput = ({temper, temperScale, scale}) => {
 
   
 
     return (
         <> 
             <legend> Enter Temperature in {shortNameTemper[scale]}:</legend>
-            <input type="text" value={temper} onChange={temperScallTo} />
+            <input type="text" value={temper} onChange={(e) => temperScale(e, scale)} />
         </>
     );
 };
