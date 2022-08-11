@@ -8,7 +8,7 @@ export const toFahrenheit = (celsius) => {
 
 export const convertFun = (temperature, converterTo) => {
     const input = parseFloat(temperature)
-    if (Number.isNaN(input)) return  alert('Please enter a valid Number')
+    if (Number.isNaN(input)) return ''
     
     const output = converterTo(input)
     const rounded = Math.round(output * 100) / 100
